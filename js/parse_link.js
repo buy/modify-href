@@ -1,3 +1,4 @@
+// Read the config from options page and call replace_links to parse the document
 function parse_link() {
   var oldHref = newHref = ''
 
@@ -9,6 +10,7 @@ function parse_link() {
   });
 }
 
+// Fetch all the hrefs in the page and replace the href value
 function replace_links(oldHref, newHref) {
   if (!oldHref || !newHref) {
     return false;

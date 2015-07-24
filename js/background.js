@@ -1,12 +1,28 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+// Load the green check-square icon font (http://fontawesome.io/icon/check-square/)
+function loadExtensionBarOnIcon() {
+  chrome.browserAction.setIcon({
+    path: {
+      '19': '/images/on32.png',
+      '38': '/images/on48.png'
+    }
+  });
+}
+
+// Load the red external-link-square icon font (http://fontawesome.io/icon/external-link-square/)
+function loadExtensionBarOffIcon() {
+  chrome.browserAction.setIcon({
+    path: {
+      '19': '/images/off32.png',
+      '38': '/images/off48.png'
+    }
+  });
+}
 
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
+  loadExtensionBarOnIcon()
   chrome.tabs.executeScript(null, {file: "/js/parse_link.js"});
-  chrome.browserAction.setIcon({path: '/images/on32.png'});
   setTimeout(function() {
-    chrome.browserAction.setIcon({path: '/images/off32.png'});
+    loadExtensionBarOffIcon()
   }, 1000);
 });
