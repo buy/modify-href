@@ -1,0 +1,11 @@
+.container-fluid {
+  padding-top: 15px;
+}
+
+#status {
+  visibility: hidden;
+}
+
+#feedback {
+  margin-top: 100px;
+}

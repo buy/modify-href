@@ -3,8 +3,8 @@
 
   "name": "Modify href",
   "description": "A Chrome extension for modifying the href / host / domain of the links on a web page",
-  "version": "0.0.1",
-  "options_page": "options/options.html",
+  "version": "0.0.2",
+  "options_page": "/src/options/options.html",
   "browser_action": {
     "default_icon": "/images/off48.png",
     "default_title": "Click to modify!"
@@ -15,7 +15,7 @@
   ],
   "background": {
     "scripts": [
-      "/js/background.js"
+      "/src/background.js"
     ],
     "persistent": false
   },

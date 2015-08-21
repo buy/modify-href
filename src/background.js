@@ -21,7 +21,7 @@ function loadExtensionBarOffIcon() {
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
   loadExtensionBarOnIcon()
-  chrome.tabs.executeScript(null, {file: "/js/parse_link.js"});
+  chrome.tabs.executeScript(null, {file: "/src/parse_link.js"});
   setTimeout(function() {
     loadExtensionBarOffIcon()
   }, 1000);

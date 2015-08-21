@@ -4,6 +4,7 @@ A Chrome extension for modifying the href / host / domain of the links on a web 
 This small tool will be extremely helpful when you are hitting your own app host while links on your web app should rather point to the other hosts or public domain.
 
 How to use:
+
 1. Install the Chrome extension
 
 2. Go to the options page of this extension

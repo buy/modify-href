@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modify href Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="status" class="alert alert-success">Options saved.</div>
+
+      <table class="table table-responsive table-striped">
+        <thead>
+          <tr>
+            <th>Old URL</th>
+            <th>New URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" id="old-href" class="form-control" placeholder="e.g. abc.com, abc.com/xyz/, etc."></td>
+            <td><input type="text" id="new-href" class="form-control" placeholder="e.g. qwe.com, qwe.com/poi/, etc."></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="form-handler" class="text-center">
+        <button id="save" class="btn btn-primary ">Save Changes</button>
+      </div>
+
+      <div id="feedback" class="text-center">
+        Authored by Chang Liu - <a href="mailto:ch@ngliu.com?Subject=Modify%20href%20feedback" target="_blank">Send feedback</a>
+      </div>
+
+      <link rel="stylesheet" type="text/css" href="options.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="options.js"></script>
+    </div>
+  </body>
+</html>
