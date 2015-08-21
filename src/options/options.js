@@ -1,5 +1,5 @@
 // Saves options to chrome.storage
-function save_options() {
+function save_options(e) {
   var oldHref = document.getElementById('old-href').value;
   var newHref = document.getElementById('new-href').value;
   chrome.storage.sync.set({
@@ -13,6 +13,7 @@ function save_options() {
       status.style.visibility = 'hidden';
     }, 2000);
   });
+  _gaq.push(['_trackEvent', e.target.id, 'clicked']);
 }
 
 // Restores options state using the preferences
