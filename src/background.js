@@ -1,4 +1,3 @@
-// Load the green check-square icon font (http://fontawesome.io/icon/check-square/)
 function loadExtensionBarOnIcon() {
   chrome.browserAction.setIcon({
     path: {
@@ -8,7 +7,6 @@ function loadExtensionBarOnIcon() {
   });
 }
 
-// Load the red external-link-square icon font (http://fontawesome.io/icon/external-link-square/)
 function loadExtensionBarOffIcon() {
   chrome.browserAction.setIcon({
     path: {
